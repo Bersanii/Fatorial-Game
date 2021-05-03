@@ -32,7 +32,7 @@
 
                     <input class="mx-auto px-3 py-1 mt-3 btn" type="button" value="Jogar" onclick="verificar()" id="verifica">
                     
-                    <input class="ms-auto mt-3  btnComoJogar" type="button" value="Como jogar">
+                    <input class="ms-auto mt-3  btnComoJogar" type="button" value="Como jogar" data-bs-toggle="modal" data-bs-target="#modalComoJogar">
                     <div id="res"></div>
                 </div>
             </div>
@@ -47,6 +47,34 @@
         </div>
    
     </div>
+
+
+
+    <div class="modal fade" id="modalComoJogar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel" style="color: #242c44; font-weight: 700;">Como Jogar</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    O Fatorial Game é um jogo focado em trabalhar o conceito de fatorial.
+                </p>
+                <p>
+                    O objetivo é reponder corretamente as perguntas no menor tempo possível.
+                </p>
+                <p>
+                    O sistema irá mostrar um timer no topo da tela que marca seu tempo, junto com 5 perguntas aleatórias.
+                    Responda as perguntas no menor tempo possível e tente bater seu recorde!!
+                </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendi</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="inicio.js"></script>
